@@ -1,6 +1,6 @@
 import "./App.css";
-import logo from "./assets/logo.jpeg";
-import waveImg from "./assets/wave.jpeg";  
+import logo from "./assets/logo.svg";
+import waveImg from "./assets/waves.svg";  
 
 
 function App() {
