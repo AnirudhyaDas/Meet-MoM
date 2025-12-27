@@ -1,0 +1,130 @@
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background: #ffffff;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 90px;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #0d1117;
+}
+
+.logo-img {
+  width: 24px;
+}
+
+.nav-btns {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.login-btn {
+  background: transparent;
+  color: #007bff;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.signup-btn {
+  background: #007bff;
+  color: white;
+  padding: 8px 20px;
+  font-size: 15px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.get-started {
+  background: #007bff;
+  color: #fff;
+  padding: 12px 34px;
+  border-radius: 30px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.get-started:hover {
+  transform: scale(1.05);
+}
+
+.wave-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.wave-image {
+  width: 85%;
+  max-width: 1000px;
+  object-fit: contain;
+  opacity: 0.97;
+}
+
+.line-section {
+  width: 85%;
+  max-width: 1000px;
+  margin: 30px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.line {
+  flex: 1;
+  height: 1.3px;
+  background: #000000;
+  opacity: 0.6;
+}
+
+.play-btn {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 10px;
+  opacity: 0.8;
+}
+
+.play-btn:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
