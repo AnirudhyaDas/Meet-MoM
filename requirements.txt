@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+python-multipart
+websockets
+pydantic
+numpy
+torch
+openai-whisper
+ffmpeg-python
+sqlalchemy
+psycopg2-binary
