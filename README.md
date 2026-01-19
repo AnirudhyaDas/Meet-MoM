@@ -16,19 +16,18 @@ The React Compiler is not enabled on this template because of its impact on dev 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
 ## Backend Folder Structure 
-meetnotes-backend/
+backend/
 ├── 🚀 app/                        # Main application logic
 │   ├── 🛠️ main.py                 # FastAPI entry point
 │   ├── ⚙️ config.py               # Global settings & Env vars
 │   ├── 🔗 dependencies.py         # DI (Dependency Injection)
 │   ├── 🗄️ database.py             # SQLAlchemy connection
 │   ├── 🏗️ models/                 # DB schemas (SQLAlchemy)
-│   │   └── user.py, meeting.py, transcript.py, summary.py...
+│   │   └── user.py, meeting.py, transcript.py...
 │   ├── 📝 schemas/                # Data validation (Pydantic)
-│   │   └── user.py, meeting.py, summary.py...
+│   │   └── user.py, summary.py...
 │   ├── 🛣️ api/                    # Route Handlers
 │   │   ├── v1/endpoints/          # Auth, Meetings, Transcripts
-│   │   |          └── auth.py, meetings.py, transcripts.py, summaries.py...
 │   │   └── websocket.py           # Real-time communication
 │   ├── 🧠 core/                   # Security & Custom Exceptions
 │   ├── 💼 services/               # Business logic (Audio, Storage)
