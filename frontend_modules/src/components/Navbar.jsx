@@ -21,7 +21,7 @@ export default function Navbar() {
           <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
             <img src={logo} alt="MoM Logo" className="h-8 w-8" />
             <span className="font-bold text-xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">
-              MoM
+              MoM - Minutes of Meeting
             </span>
           </div>
 
@@ -87,7 +87,6 @@ export default function Navbar() {
             <button className="block w-full text-left px-4 py-2 text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors">
               Contacts
             </button>
-            <div className="border-t dark:border-gray-800 my-2" />
             <button className="block w-full text-center bg-blue-600 text-white px-5 py-3 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20">
               Add to Browser
             </button>
