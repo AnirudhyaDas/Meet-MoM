@@ -16,22 +16,4 @@ The React Compiler is not enabled on this template because of its impact on dev 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
 ## Backend Folder Structure 
-backend/
-├── 📂 app/
-│   ├── 🚀 main.py                # FastAPI application entry
-│   ├── ⚙️ config.py              # Configuration settings
-│   ├── 🛠️ dependencies.py        # Dependency injection
-│   ├── 🗄️ database.py            # Database connection (PostgreSQL)
-│   ├── 🧠 ai/                    # AI/ML components (Whisper & NLP)
-│   │   ├── 🎙️ speech_to_text.py
-│   │   └── 📝 summarizer.py
-│   ├── 🏗️ models/                # SQLAlchemy models
-│   ├── 🧪 schemas/               # Pydantic schemas (Validation)
-│   ├── 🛣️ api/                   # API routes & WebSockets
-│   ├── 💼 services/              # Core Business Logic
-│   └── 👷 workers/               # Celery tasks / Background jobs
-├── 💾 alembic/                   # Database migrations
-├── 🧪 tests/                     # Pytest suite
-├── 🐳 docker/                    # Docker & Nginx config
-├── 📋 requirements/              # Dependency management
-└── 📄 README.md
+
