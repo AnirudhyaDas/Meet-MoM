@@ -6,11 +6,7 @@ export default function Hero() {
     const { theme, toggleTheme } = useTheme();
 
   return (
-    <main className={`flex flex-col items-center justify-center text-center py-4 px-4 gap-8 ${
-        theme === "dark"
-          ? "bg-[#0f0f0f]/80 "
-          : "bg-[#ffffff]/80 "
-    }`}>
+    <main className="flex flex-col items-center justify-center text-center py-4 px-4 gap-8">
       <div className="space-y-4 max-w-2xl">
         <h1 className="text-4xl md:text-5xl font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">
           MoM is an AI-Powered Meeting Summariser

@@ -27,7 +27,7 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
-            <button className="text-sm font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+             <button className="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-600/20 transition-all transform hover:-translate-y-0.5 cursor-pointer">
               Add to Browser
             </button>
             <button className="text-sm font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
@@ -35,13 +35,6 @@ export default function Navbar() {
             </button>
             <button className="text-sm font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
               Contacts
-            </button>
-            <div className="h-4 w-[1px] bg-gray-300 dark:bg-gray-700 mx-2" />
-            <button className="text-sm font-medium opacity-70 hover:opacity-100 transition-opacity">
-              Log In
-            </button>
-            <button className="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-600/20 transition-all transform hover:-translate-y-0.5 cursor-pointer">
-              Sign Up
             </button>
             
             <button
@@ -89,20 +82,14 @@ export default function Navbar() {
         <div className="md:hidden border-t dark:border-gray-800 animate-in slide-in-from-top-5 duration-200">
           <div className="px-4 py-6 space-y-4 bg-white dark:bg-[#0f0f0f] shadow-xl">
             <button className="block w-full text-left px-4 py-2 text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors">
-              Add to Browser
-            </button>
-            <button className="block w-full text-left px-4 py-2 text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors">
               Team
             </button>
             <button className="block w-full text-left px-4 py-2 text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors">
               Contacts
             </button>
             <div className="border-t dark:border-gray-800 my-2" />
-            <button className="block w-full text-left px-4 py-2 text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors">
-              Log In
-            </button>
             <button className="block w-full text-center bg-blue-600 text-white px-5 py-3 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20">
-              Sign Up
+              Add to Browser
             </button>
           </div>
         </div>
