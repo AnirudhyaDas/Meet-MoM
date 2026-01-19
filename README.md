@@ -17,26 +17,21 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ## Backend Folder Structure 
 backend/
-├── 🚀 app/                        # Main application logic
-│   ├── 🛠️ main.py                 # FastAPI entry point
-│   ├── ⚙️ config.py               # Global settings & Env vars
-│   ├── 🔗 dependencies.py         # DI (Dependency Injection)
-│   ├── 🗄️ database.py             # SQLAlchemy connection
-│   ├── 🏗️ models/                 # DB schemas (SQLAlchemy)
-│   │   └── user.py, meeting.py, transcript.py...
-│   ├── 📝 schemas/                # Data validation (Pydantic)
-│   │   └── user.py, summary.py...
-│   ├── 🛣️ api/                    # Route Handlers
-│   │   ├── v1/endpoints/          # Auth, Meetings, Transcripts
-│   │   └── websocket.py           # Real-time communication
-│   ├── 🧠 core/                   # Security & Custom Exceptions
-│   ├── 💼 services/               # Business logic (Audio, Storage)
-│   ├── 👷 workers/                # Background tasks (Celery)
-│   ├── 🤖 ai/                     # AI/ML (Whisper, NLP, Summarizer)
-│   └── 🔧 utils/                  # Helper functions & Validators
-├── 📜 alembic/                    # Database migrations
-├── 🧪 tests/                      # Pytest suite (API & Services)
-├── 📦 requirements/               # Base, Dev, and Prod dependencies
-├── 🐳 docker/                     # Dockerfile & Docker-Compose
-├── 📄 .env.example                # Template for environment variables
-└── 📝 README.md                   # Documentation
+├── 📂 app/
+│   ├── 🚀 main.py                # FastAPI application entry
+│   ├── ⚙️ config.py              # Configuration settings
+│   ├── 🛠️ dependencies.py        # Dependency injection
+│   ├── 🗄️ database.py            # Database connection (PostgreSQL)
+│   ├── 🧠 ai/                    # AI/ML components (Whisper & NLP)
+│   │   ├── 🎙️ speech_to_text.py
+│   │   └── 📝 summarizer.py
+│   ├── 🏗️ models/                # SQLAlchemy models
+│   ├── 🧪 schemas/               # Pydantic schemas (Validation)
+│   ├── 🛣️ api/                   # API routes & WebSockets
+│   ├── 💼 services/              # Core Business Logic
+│   └── 👷 workers/               # Celery tasks / Background jobs
+├── 💾 alembic/                   # Database migrations
+├── 🧪 tests/                     # Pytest suite
+├── 🐳 docker/                    # Docker & Nginx config
+├── 📋 requirements/              # Dependency management
+└── 📄 README.md
