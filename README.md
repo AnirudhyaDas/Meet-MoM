@@ -96,4 +96,3 @@ meetnotes-backend/
 ├── pyproject.toml
 ├── Makefile
 └── README.md
-```bash
