@@ -48,12 +48,12 @@ async def lifespan(app: FastAPI):
     yield
 
     # Shutdown
-    logger.info("Shutting down MeetNotes Backend...")
+    logger.info("Shutting down MeetMoM Backend...")
 
 
 # Create FastAPI app
 app = FastAPI(
-    title="MeetNotes API",
+    title="MeetMoM API",
     description="AI-powered meeting transcription and summarization with Supabase",
     version="1.0.0",
     docs_url="/docs" if settings.ENVIRONMENT != "production" else None,
@@ -137,4 +137,5 @@ async def general_exception_handler(request, exc):
     return JSONResponse(
         status_code=500,
         content={"detail": "Internal server error"},
+
     )
