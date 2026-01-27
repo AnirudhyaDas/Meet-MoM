@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 async def lifespan(app: FastAPI):
     """Lifespan context manager for startup/shutdown events"""
     # Startup
-    logger.info("Starting MeetNotes Backend with Supabase...")
+    logger.info("Starting MeetMoM Backend with Supabase...")
 
     # Test Supabase connection
     if await SupabaseClient.test_connection():
@@ -139,3 +139,4 @@ async def general_exception_handler(request, exc):
         content={"detail": "Internal server error"},
 
     )
+
