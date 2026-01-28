@@ -15,78 +15,26 @@ The React Compiler is not enabled on this template because of its impact on dev 
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
-## Backend Folder Structure   
+## 📁 Featured Project Architecture (meetMoM-backend)
+
 ```bash
 meetMoM-backend/
-├── app/
-│   ├── __init__.py
-│   ├── main.py                    # FastAPI application entry
-│   ├── config.py                  # Configuration settings
-│   ├── dependencies.py            # Dependency injection
-│   ├── supabase_client.py         # Supabase client setup
-│   ├── models/                    # Pydantic models for Supabase
-│   │   ├── __init__.py
-│   │   ├── user.py
-│   │   ├── meeting.py
-│   │   ├── transcript.py
-│   │   └── summary.py
-
+├── 🚀 app/                      # Main Application Logic (FastAPI)
+│   ├── ⚡ supabase_client.py    # Supabase initialization
+│   ├── 🧠 models/               # Pydantic models for Supabase
+│   └── 🏗️ main.py                # Entry point
+├── 🧪 tests/                    # Pytest suite
+├── 🐳 docker-compose.yml        # Container orchestration
+└── 📄 README.md
 <details> <summary><b>📂 View full directory tree</b></summary>
-│   ├── schemas/                   # Request/Response schemas
-│   │   ├── __init__.py
-│   │   ├── user.py
-│   │   ├── meeting.py
-│   │   └── summary.py
-│   ├── api/                       # API routes
-│   │   ├── __init__.py
-│   │   ├── v1/
-│   │   │   ├── __init__.py
-│   │   │   ├── endpoints/
-│   │   │   │   ├── __init__.py
-│   │   │   │   ├── auth.py
-│   │   │   │   ├── meetings.py
-│   │   │   │   ├── transcripts.py
-│   │   │   │   ├── summaries.py
-│   │   │   │   └── realtime.py
-│   │   │   └── api.py
-│   │   └── websocket.py
-│   ├── services/                  # Business logic services
-│   │   ├── __init__.py
-│   │   ├── supabase_service.py    # Supabase operations
-│   │   ├── audio_service.py
-│   │   ├── transcription_service.py
-│   │   ├── summary_service.py
-│   │   ├── meeting_service.py
-│   │   └── storage_service.py     # Supabase Storage
-│   ├── workers/                   # Background workers
-│   │   ├── __init__.py
-│   │   └── tasks.py
-│   ├── ai/                        # AI/ML components
-│   │   ├── __init__.py
-│   │   ├── speech_to_text.py
-│   │   ├── summarizer.py
-│   │   └── nlp_processor.py
-│   ├── auth/                      # Authentication
-│   │   ├── __init__.py
-│   │   ├── supabase_auth.py
-│   │   └── dependencies.py
-│   └── utils/                     # Utilities
-│       ├── __init__.py
-│       ├── file_handlers.py
-│       ├── time_utils.py
-│       └── validators.py
-├── tests/
-│   ├── __init__.py
-│   ├── conftest.py
-│   └── test_api/
-├── requirements/
-│   ├── base.txt
-│   ├── dev.txt
-│   └── prod.txt
-├── docker-compose.yml
-├── .env.example
-├── .gitignore
-├── pyproject.toml
-├── Makefile
-└── README.md
+└── 📂 app/
+    ├── ⚙️ config.py              # Configuration settings
+    ├── 🧪 schemas/               # Request/Response validation
+    ├── 🛣️ api/                   # API v1 & WebSocket routes
+    │   └── v1/endpoints/         # Auth, Meetings, Transcripts
+    ├── 💼 services/              # Business logic (Supabase Service)
+    ├── 🧠 ai/                    # ML components (Speech-to-Text)
+    ├── 🔐 auth/                  # Supabase Auth integration
+    ├── 👷 workers/               # Background tasks
+    └── 🛠️ utils/                 # File & Time utilities
 </details>
