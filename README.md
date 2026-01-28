@@ -29,8 +29,7 @@ meetMoM-backend/
 
 <details>
   <summary><b>📂 View full directory tree</b></summary>
-
-  ```bash
+```bash
   └── 📂 app/
       ├── ⚙️ config.py              # Configuration settings
       ├── 🧪 schemas/               # Request/Response validation
