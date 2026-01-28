@@ -39,4 +39,5 @@ meetMoM-backend/
     ├── 🔐 auth/                  # Supabase Auth integration
     ├── 👷 workers/               # Background tasks
     └── 🛠️ utils/                 # File & Time utilities
+
 </details>
