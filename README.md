@@ -15,10 +15,7 @@ The React Compiler is not enabled on this template because of its impact on dev 
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
-## Backend Folder Structure 
-<details open>
-  <summary><b>Click to expand project structure 📂</b></summary>
-  
+## Backend Folder Structure   
 ```bash
 meetMoM-backend/
 ├── app/
@@ -33,6 +30,7 @@ meetMoM-backend/
 │   │   ├── meeting.py
 │   │   ├── transcript.py
 │   │   └── summary.py
+<details> <summary><b>📂 View full directory tree</b></summary>
 │   ├── schemas/                   # Request/Response schemas
 │   │   ├── __init__.py
 │   │   ├── user.py
