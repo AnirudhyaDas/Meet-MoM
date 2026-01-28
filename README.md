@@ -27,17 +27,18 @@ meetMoM-backend/
 ├── 🐳 docker-compose.yml        # Container orchestration
 └── 📄 README.md
 
-<details> <summary><b>📂 View full directory tree</b></summary>
+<details>
+  <summary><b>📂 View full directory tree</b></summary>
 
-└── 📂 app/
-    ├── ⚙️ config.py              # Configuration settings
-    ├── 🧪 schemas/               # Request/Response validation
-    ├── 🛣️ api/                   # API v1 & WebSocket routes
-    │   └── v1/endpoints/         # Auth, Meetings, Transcripts
-    ├── 💼 services/              # Business logic (Supabase Service)
-    ├── 🧠 ai/                    # ML components (Speech-to-Text)
-    ├── 🔐 auth/                  # Supabase Auth integration
-    ├── 👷 workers/               # Background tasks
-    └── 🛠️ utils/                 # File & Time utilities
-
+  ```bash
+  └── 📂 app/
+      ├── ⚙️ config.py              # Configuration settings
+      ├── 🧪 schemas/               # Request/Response validation
+      ├── 🛣️ api/                   # API v1 & WebSocket routes
+      │   └── v1/endpoints/         # Auth, Meetings, Transcripts
+      ├── 💼 services/              # Business logic (Supabase Service)
+      ├── 🧠 ai/                    # ML components (Speech-to-Text)
+      ├── 🔐 auth/                  # Supabase Auth integration
+      ├── 👷 workers/               # Background tasks
+      └── 🛠️ utils/                 # File & Time utilities
 </details>
