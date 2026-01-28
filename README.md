@@ -17,80 +17,71 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ## Backend Folder Structure 
 ```bash
-meetnotes-backend/
+meetMoM-backend/
 ├── app/
 │   ├── __init__.py
 │   ├── main.py                    # FastAPI application entry
 │   ├── config.py                  # Configuration settings
 │   ├── dependencies.py            # Dependency injection
-│   ├── database.py                # Database connection
-│   ├── models/                    # SQLAlchemy models
+│   ├── supabase_client.py         # Supabase client setup
+│   ├── models/                    # Pydantic models for Supabase
 │   │   ├── __init__.py
 │   │   ├── user.py
 │   │   ├── meeting.py
 │   │   ├── transcript.py
 │   │   └── summary.py
-│   ├── schemas/                   # Pydantic schemas
+│   ├── schemas/                   # Request/Response schemas
 │   │   ├── __init__.py
 │   │   ├── user.py
 │   │   ├── meeting.py
 │   │   └── summary.py
 │   ├── api/                       # API routes
 │   │   ├── __init__.py
-│   │   ├── v1/                    # API version 1
+│   │   ├── v1/
 │   │   │   ├── __init__.py
 │   │   │   ├── endpoints/
 │   │   │   │   ├── __init__.py
 │   │   │   │   ├── auth.py
 │   │   │   │   ├── meetings.py
 │   │   │   │   ├── transcripts.py
-│   │   │   │   └── summaries.py
-│   │   │   └── api.py             # API router
-│   │   └── websocket.py           # WebSocket endpoints
-│   ├── core/                      # Core business logic
-│   │   ├── __init__.py
-│   │   ├── security.py            # Authentication & authorization
-│   │   └── exceptions.py          # Custom exceptions
+│   │   │   │   ├── summaries.py
+│   │   │   │   └── realtime.py
+│   │   │   └── api.py
+│   │   └── websocket.py
 │   ├── services/                  # Business logic services
 │   │   ├── __init__.py
-│   │   ├── audio_service.py       # Audio processing
+│   │   ├── supabase_service.py    # Supabase operations
+│   │   ├── audio_service.py
 │   │   ├── transcription_service.py
 │   │   ├── summary_service.py
 │   │   ├── meeting_service.py
-│   │   └── storage_service.py     # Cloud storage
-│   ├── workers/                   # Celery tasks/background workers
+│   │   └── storage_service.py     # Supabase Storage
+│   ├── workers/                   # Background workers
 │   │   ├── __init__.py
-│   │   ├── tasks.py
-│   │   └── celery_app.py
+│   │   └── tasks.py
 │   ├── ai/                        # AI/ML components
 │   │   ├── __init__.py
 │   │   ├── speech_to_text.py
 │   │   ├── summarizer.py
-│   │   ├── nlp_processor.py
-│   │   └── models/                # ML model loading & inference
-│   │       ├── __init__.py
-│   │       └── whisper_handler.py
+│   │   └── nlp_processor.py
+│   ├── auth/                      # Authentication
+│   │   ├── __init__.py
+│   │   ├── supabase_auth.py
+│   │   └── dependencies.py
 │   └── utils/                     # Utilities
 │       ├── __init__.py
 │       ├── file_handlers.py
 │       ├── time_utils.py
 │       └── validators.py
-├── alembic/                       # Database migrations
-│   ├── versions/
-│   └── alembic.ini
-├── tests/                         # Test suite
+├── tests/
 │   ├── __init__.py
 │   ├── conftest.py
-│   ├── test_api/
-│   └── test_services/
+│   └── test_api/
 ├── requirements/
 │   ├── base.txt
 │   ├── dev.txt
 │   └── prod.txt
-├── docker/
-│   ├── Dockerfile
-│   ├── docker-compose.yml
-│   └── nginx/
+├── docker-compose.yml
 ├── .env.example
 ├── .gitignore
 ├── pyproject.toml
