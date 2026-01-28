@@ -33,7 +33,6 @@ meetMoM-backend/
 
 <details> <summary><b>📂 View full directory tree</b></summary>
 
-```bash
 │   ├── schemas/                   # Request/Response schemas
 │   │   ├── __init__.py
 │   │   ├── user.py
@@ -91,4 +90,5 @@ meetMoM-backend/
 ├── pyproject.toml
 ├── Makefile
 └── README.md
+
 </details>
