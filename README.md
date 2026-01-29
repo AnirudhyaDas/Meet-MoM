@@ -26,9 +26,6 @@ meetMoM-backend/
 ├── 🧪 tests/                    # Pytest suite
 ├── 🐳 docker-compose.yml        # Container orchestration
 └── 📄 README.md
-<details>
-  <summary><b>📂 View full directory tree</b></summary>
-bash
   └── 📂 app/
       ├── ⚙️ config.py              # Configuration settings
       ├── 🧪 schemas/               # Request/Response validation
@@ -39,5 +36,4 @@ bash
       ├── 🔐 auth/                  # Supabase Auth integration
       ├── 👷 workers/               # Background tasks
       └── 🛠️ utils/                 # File & Time utilities
-</details>
 ```
