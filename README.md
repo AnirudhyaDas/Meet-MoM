@@ -28,7 +28,7 @@ meetMoM-backend/
 └── 📄 README.md
 
 <details>
-  <summary><b>📂 View full directory tree</b></summary>
+  <summary><b>📂 View full directory tree</b>
 ```bash
   └── 📂 app/
       ├── ⚙️ config.py              # Configuration settings
@@ -40,4 +40,5 @@ meetMoM-backend/
       ├── 🔐 auth/                  # Supabase Auth integration
       ├── 👷 workers/               # Background tasks
       └── 🛠️ utils/                 # File & Time utilities
+</summary>
 </details>
